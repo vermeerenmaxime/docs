@@ -1,17 +1,17 @@
 ---
-title: 'Global Settings'
-description: 'Mintlify gives you complete control over the look and feel of your documentation using the mint.json file'
-icon: 'gear'
+title: "Global Settings"
+description: "Monkey Real Estate Management gives you complete control over the look and feel of your documentation using the monkey.json file"
+icon: "gear"
 ---
 
-Every Mintlify site needs a `mint.json` file with the core configuration settings. Learn more about the [properties](#properties) below.
+Every Monkey Real Estate Management site needs a `monkey.json` file with the core configuration settings. Learn more about the [properties](#properties) below.
 
 ## Properties
 
 <ResponseField name="name" type="string" required>
-Name of your project. Used for the global title.
+Name of your real estate project. Used for the global title.
 
-Example: `mintlify`
+Example: `MonkeyRealEstate`
 
 </ResponseField>
 
@@ -21,13 +21,13 @@ Example: `mintlify`
     <ResponseField name="group" type="string">
     The name of the group.
 
-    Example: `Settings`
+    Example: `Property Management`
 
     </ResponseField>
     <ResponseField name="pages" type="string[]">
     The relative paths to the markdown files that will serve as pages.
 
-    Example: `["customization", "page"]`
+    Example: `["listings", "tenants"]`
 
     </ResponseField>
 
@@ -57,12 +57,12 @@ Example: `mintlify`
   Hex color codes for your global theme
   <Expandable title="Colors">
     <ResponseField name="primary" type="string" required>
-      The primary color. Used for most often for highlighted content, section
+      The primary color. Used most often for highlighted content, section
       headers, accents, in light mode
     </ResponseField>
     <ResponseField name="light" type="string">
-      The primary color for dark mode. Used for most often for highlighted
-      content, section headers, accents, in dark mode
+      The primary color for dark mode. Used most often for highlighted content,
+      section headers, accents, in dark mode
     </ResponseField>
     <ResponseField name="dark" type="string">
       The primary color for important buttons
@@ -87,10 +87,10 @@ Example: `mintlify`
     <ResponseField name="name" type="string">
     The name of the button.
 
-    Example: `Contact us`
+    Example: `Contact Property Manager`
     </ResponseField>
     <ResponseField name="url" type="string">
-    The url once you click on the button. Example: `https://mintlify.com/contact`
+    The url once you click on the button. Example: `https://monkeyrealestate.com/contact`
     </ResponseField>
 
   </Expandable>
@@ -124,12 +124,12 @@ Example: `mintlify`
     <ResponseField name="icon" type="string">
     The [Font Awesome](https://fontawesome.com/search?s=brands%2Cduotone) icon used to feature the anchor.
 
-    Example: `comments`
+    Example: `building`
     </ResponseField>
     <ResponseField name="name" type="string">
     The name of the anchor label.
 
-    Example: `Community`
+    Example: `Properties`
     </ResponseField>
     <ResponseField name="url" type="string">
       The start of the URL that marks what pages go in the anchor. Generally, this is the name of the folder you put your pages in.
@@ -232,13 +232,13 @@ Example: `mintlify`
   Examples:
   <CodeGroup>
     ```json Absolute
-    "openapi": "https://example.com/openapi.json"
+    "openapi": "https://monkeyrealestate.com/openapi.json"
     ```
     ```json Relative
     "openapi": "/openapi.json"
     ```
     ```json Multiple
-    "openapi": ["https://example.com/openapi1.json", "/openapi2.json", "/openapi3.json"]
+    "openapi": ["https://monkeyrealestate.com/openapi1.json", "/openapi2.json", "/openapi3.json"]
     ```
   </CodeGroup>
 
@@ -250,8 +250,8 @@ Example: `mintlify`
   Example: 
   ```json
   {
-    "x": "https://x.com/mintlify",
-    "website": "https://mintlify.com"
+    "x": "https://x.com/monkeyrealestate",
+    "website": "https://monkeyrealestate.com"
   }
   ```
   <Expandable title="FooterSocials">
@@ -263,7 +263,7 @@ Example: `mintlify`
     <ResponseField name="property" type="string">
     The URL to the social platform.
     
-    Example: `https://x.com/mintlify`
+    Example: `https://x.com/monkeyrealestate`
     </ResponseField>
   </Expandable>
 </ResponseField>
